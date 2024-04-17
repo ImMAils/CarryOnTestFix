@@ -37,6 +37,7 @@ public class ItemCarryonEntity extends Item
 {
 
 	private static final Method initGoals;
+	private final int prevItemSlot = null;
 
 	static
 	{
@@ -156,6 +157,8 @@ public class ItemCarryonEntity extends Item
 					return;
 
 				((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1, this.potionLevel(stack, level), false, false));
+				if (prevItemSlot != itemSlot && prevItemSlot != null) return;
+				else prevItemSlot = itemSlot;
 			}
 
 		}

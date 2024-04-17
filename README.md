@@ -1,16 +1,5 @@
-
-# Carry On [![](http://cf.way2muchnoise.eu/carry-on.svg)](https://minecraft.curseforge.com/projects/carry-on) [![](http://cf.way2muchnoise.eu/versions/carry-on.svg)](https://minecraft.curseforge.com/projects/carry-on)
-
-To use CarryOn in your projects, include this in your build.gradle:
-```
-repositories {
-	maven {
-		url "https://maven.blamejared.com/"
-	}
-}
-
-dependencies {
-	deobfCompile "tschipp.carryon:carryon-MCVERSION:MODVERSION" 
-}
-```
-Make sure to replace `MCVERSION` and `MODVERSION` with the appropriate versions.
+# My CarryOn 1.18.2 bug fix
+About the bug: https://github.com/Tschipp/CarryOn/issues/364
+I will not do a pull request since this fix is very poor. 
+- it will delete a carried item in your hands if you try to bug it (as described in issue)
+- it will throw a fake error message to the player
